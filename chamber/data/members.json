@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Tunari Tech Solutions",
+        "address": "Av. Heroínas #342, Cochabamba",
+        "phone": "+591 4 4123456",
+        "website": "https://example.com/tunaritech",
+        "image": "images/member1.webp",
+        "membershipLevel": 3
+    },
+    {
+        "name": "Valle Alto Coffee & Bakery",
+        "address": "Calle España #105, Cochabamba",
+        "phone": "+591 4 4654321",
+        "website": "https://example.com/vallealtocoffee",
+        "image": "images/member2.webp",
+        "membershipLevel": 2
+    },
+    {
+        "name": "Cochabamba Auto Care",
+        "address": "Av. Blanco Galindo Km 3, Cochabamba",
+        "phone": "+591 4 4987654",
+        "website": "https://example.com/cochaautocare",
+        "image": "images/member3.webp",
+        "membershipLevel": 1
+    },
+    {
+        "name": "Concordia Legal Group",
+        "address": "Av. Salamanca #890, Cochabamba",
+        "phone": "+591 4 4112233",
+        "website": "https://example.com/concordialegal",
+        "image": "images/member4.webp",
+        "membershipLevel": 3
+    },
+    {
+        "name": "Cristo Redentor Real Estate",
+        "address": "Av. Ayacucho #220, Cochabamba",
+        "phone": "+591 4 4445566",
+        "website": "https://example.com/cristorealestate",
+        "image": "images/member5.webp",
+        "membershipLevel": 2
+    },
+    {
+        "name": "Lajta Fitness Center",
+        "address": "Calle América Este #550, Cochabamba",
+        "phone": "+591 4 4778899",
+        "website": "https://example.com/lajtafitness",
+        "image": "images/member6.webp",
+        "membershipLevel": 1
+    },
+    {
+        "name": "Andean Logistics & Transport",
+        "address": "Av. Petrolera Km 2, Cochabamba",
+        "phone": "+591 4 4332211",
+        "website": "https://example.com/andeanlogistics",
+        "image": "images/member7.webp",
+        "membershipLevel": 3
+    }
+]

@@ -1,0 +1,28 @@
+@media (min-width: 640px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+
+    .list .member-card {
+        display: grid;
+        grid-template-columns: 2fr 2fr 1fr 1fr 1fr;
+        align-items: center;
+        text-align: left;
+    }
+
+    .list .member-card h3,
+    .list .member-card p {
+        margin: 0;
+    }
+}

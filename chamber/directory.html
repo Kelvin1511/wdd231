@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cochabamba Chamber of Commerce - Member Directory</title>
+    <meta name="description"
+        content="Official member directory for the Cochabamba Chamber of Commerce. Discover local businesses and services.">
+    <meta name="author" content="Rich Kevin Panoxo Vargas">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+
+    <!-- Open Graph Meta Tags for Facebook -->
+    <meta property="og:title" content="Cochabamba Chamber of Commerce Directory">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://richkevin.github.io/wdd231/chamber/images/logo.webp">
+    <meta property="og:url" content="https://richkevin.github.io/wdd231/chamber/directory.html">
+    <meta property="og:description" content="Explore businesses and organizations in Cochabamba, Bolivia.">
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/larger.css">
+
+    <!-- JavaScript Files -->
+    <script src="js/dates.js" defer></script>
+    <script src="js/directory.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.webp" alt="Cochabamba Chamber Logo" width="80" height="80">
+            <h1>Cochabamba Chamber of Commerce</h1>
+        </div>
+        <button id="menu" aria-label="Toggle Navigation Menu">☰</button>
+        <nav id="animateme">
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Business Directory</h2>
+        <div class="menu-toggle">
+            <button id="grid" aria-label="Grid View">Grid View 📱</button>
+            <button id="list" aria-label="List View">List View 📜</button>
+        </div>
+        <article id="members-container" class="grid"></article>
+    </main>
+
+    <footer>
+        <div class="footer-info">
+            <p><strong>Cochabamba Chamber of Commerce</strong></p>
+            <p>Av. Ballivián #500, Cochabamba, Bolivia</p>
+            <p>contact@cochabambachamber.org | +591 4 4251111</p>
+        </div>
+        <div class="footer-dev">
+            <p>&copy; <span id="currentyear"></span> | Rich Kevin Panoxo Vargas | Bolivia | WDD 231</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+
+</html>
