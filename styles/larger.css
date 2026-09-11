@@ -1,28 +1,20 @@
 @media (min-width: 640px) {
-    #menu-button {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #menu {
         display: none;
     }
 
-    nav {
-        display: block;
-        position: static;
-        width: auto;
-    }
-
-    #primary-nav {
+    nav ul {
+        display: flex;
         flex-direction: row;
+        gap: 1.5rem;
     }
 
-    .home-grid {
-        display: grid;
+    .grid-container {
         grid-template-columns: 1fr 1fr;
-    }
-
-    .full-width {
-        grid-column: 1 / -1;
-    }
-
-    .course-grid {
-        grid-template-columns: repeat(3, 1fr);
     }
 }
