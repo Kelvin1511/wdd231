@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce - Home</title>
+    <meta name="description" content="Home page for the Chamber of Commerce.">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlights.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.png" alt="Chamber Logo">
+            <h1>Chamber of Commerce</h1>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Hero Section with CTA -->
+        <section class="hero">
+            <img src="images/cochabamba.jpg" alt="Chamber Hero Image" class="hero-img">
+            <div class="cta">
+                <a href="join.html" class="cta-button">Join the Chamber!</a>
+            </div>
+        </section>
+
+        <!-- Events Section -->
+        <section class="events">
+            <h2>Current Events</h2>
+            <p>Annual Business Expo - Next Friday at 10:00 AM.</p>
+        </section>
+
+        <!-- Weather Section -->
+        <section class="weather">
+            <h2>Weather</h2>
+            <div id="weather-current"></div>
+            <h3>3-Day Forecast</h3>
+            <div id="weather-forecast"></div>
+        </section>
+
+        <!-- Spotlights Section -->
+        <section class="spotlights">
+            <h2>Member Spotlights</h2>
+            <div id="spotlight-cards"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Chamber of Commerce | Cochabamba</p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+
+</html>
