@@ -4,8 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chamber of Commerce - Home</title>
-    <meta name="description" content="Home page for the Chamber of Commerce.">
+    <title>Chamber of Commerce - Home Page</title>
+    <meta name="description"
+        content="Official home page for the Cochabamba Chamber of Commerce. Connecting businesses, supporting local economy, and fostering community growth.">
+    <meta name="author" content="Rich Kevin Panozo Vargas">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png" type="image/png">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Cochabamba Chamber of Commerce - Home Page">
+    <meta property="og:description"
+        content="Discover commercial opportunities, local events, and business member spotlights at the Cochabamba Chamber of Commerce.">
+    <meta property="og:image" content="https://kelvin1511.github.io/wdd231/chamber/images/cochabamba.jpg">
+    <meta property="og:url" content="https://kelvin1511.github.io/wdd231/chamber/index.html">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- CSS Styles -->
     <link rel="stylesheet" href="styles/normalize.css">
@@ -23,12 +40,12 @@
 
     <header>
         <div class="logo-container">
-            <img src="images/logo.png" alt="Chamber Logo">
-            <h1>Chamber of Commerce</h1>
+            <img src="images/logo.webp" alt="Cochabamba Chamber Logo">
         </div>
+        <button id="menu-button" aria-label="Toggle navigation menu">☰</button>
     </header>
 
-    <nav>
+    <nav id="primary-nav">
         <ul>
             <li><a href="index.html" class="active">Home</a></li>
             <li><a href="directory.html">Directory</a></li>
@@ -37,9 +54,12 @@
     </nav>
 
     <main>
+        <!-- Single H1 element inside main element for SEO & Accessibility Audit -->
+        <h1>Cochabamba Chamber of Commerce</h1>
+
         <!-- Hero Section -->
         <section class="hero">
-            <img src="images/cochabamba.jpg" alt="Chamber Hero Image" class="hero-img">
+            <img src="images/cochabamba.jpg" alt="Panoramic view of Cochabamba city" class="hero-img">
             <div class="cta">
                 <a href="join.html" class="cta-button">Join the Chamber!</a>
             </div>
