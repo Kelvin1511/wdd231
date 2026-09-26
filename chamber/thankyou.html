@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css" media="(min-width: 768px)">
+    <script src="scripts/navigation.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo-box">
+            <span class="logo-icon">&lt;/&gt;</span>
+        </div>
+        <span class="user-name">Rich Kevin Panozo Vargas</span>
+        <button id="menu" aria-label="Open Navigation Menu"></button>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="index.html">Chamber</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+
+    <main class="thankyou-main">
+        <h1>Thank You for Your Application!</h1>
+        <p>We have received your application details below:</p>
+
+        <div id="application-results" class="results-card">
+            <!-- JavaScript will populate data here -->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear">2026</span> | Rich Kevin Panozo Vargas | Bolivia</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const resultsContainer = document.getElementById('application-results');
+
+        function getParam(name) {
+            return urlParams.get(name) || 'Not provided';
+        }
+
+        resultsContainer.innerHTML = `
+            <p><strong>First Name:</strong> ${getParam('fname')}</p>
+            <p><strong>Last Name:</strong> ${getParam('lname')}</p>
+            <p><strong>Organizational Title:</strong> ${getParam('orgtitle')}</p>
+            <p><strong>Email:</strong> ${getParam('email')}</p>
+            <p><strong>Mobile Phone:</strong> ${getParam('phone')}</p>
+            <p><strong>Business Name:</strong> ${getParam('organization')}</p>
+            <p><strong>Membership Level:</strong> ${getParam('membership')}</p>
+            <p><strong>Description:</strong> ${getParam('description')}</p>
+            <p><strong>Application Date & Time:</strong> ${getParam('timestamp')}</p>
+        `;
+    </script>
+</body>
+
+</html>
