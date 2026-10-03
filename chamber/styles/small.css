@@ -128,3 +128,54 @@ nav ul.navigation li a.active {
         align-items: start;
     }
 }
+
+/* Discover Page Styles (Mobile / Base View) */
+.discover-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.visitor-message {
+    background-color: #e2e8f0;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.cards-grid section {
+    background-color: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.cards-grid figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.cards-grid button {
+    background-color: #004080;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+.cards-grid button:hover {
+    background-color: #002b5c;
+}

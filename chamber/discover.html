@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover - Chamber of Commerce</title>
+    <meta name="description"
+        content="Discover page for the Chamber of Commerce highlighting local points of interest, demographics, and visitor features.">
+    <meta name="author" content="Rich Kevin Panozo Vargas">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css" media="(min-width: 768px)">
+
+    <!-- JavaScript Module -->
+    <script src="scripts/discover.js" type="module" defer></script>
+</head>
+
+<body>
+    <header>
+        <!-- Mantén la misma estructura de header/navegación que usas en tus otras páginas -->
+        <div class="logo-box">
+            <h1>Chamber of Commerce</h1>
+        </div>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html" class="active">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="discover-main">
+        <h1>Discover Our Area</h1>
+
+        <!-- Visitor message section for localStorage requirement -->
+        <div id="visitor-message" class="visitor-message"></div>
+
+        <!-- Cards grid container -->
+        <section class="cards-grid">
+            <!-- Cards will be dynamically loaded via JavaScript -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear">2026</span> | Rich Kevin Panozo Vargas | WDD 231</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
