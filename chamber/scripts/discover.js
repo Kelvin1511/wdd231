@@ -1,4 +1,4 @@
-// Data of the 8 items directly inside the script to avoid browser security blocks
+// Data of the 8 items directly inside the script to avoid local module loading errors
 const discoverItems = [
     {
         name: "Historic Downtown",
@@ -58,7 +58,7 @@ const discoverItems = [
     }
 ];
 
-// Load cards dynamically into the DOM
+// Load cards dynamically into the DOM with specific classes for grid areas
 const cardsContainer = document.querySelector('.cards-grid');
 
 function displayCards(items) {
@@ -112,3 +112,17 @@ if (visitMessageElement) {
 }
 
 localStorage.setItem(lastVisitKey, currentTime);
+
+// Dynamic sizing for member spotlight images on Home page
+window.addEventListener('DOMContentLoaded', () => {
+    const spotlightImages = document.querySelectorAll('.spotlight img, .member-card img, #spotlight img, .card img');
+    spotlightImages.forEach(img => {
+        if (!img.closest('.hero') && !img.closest('header')) {
+            img.style.width = '80px';
+            img.style.height = '80px';
+            img.style.objectFit = 'contain';
+            img.style.display = 'block';
+            img.style.margin = '0.5rem auto';
+        }
+    });
+});
