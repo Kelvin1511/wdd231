@@ -22,6 +22,14 @@ header h1 {
     text-align: center;
 }
 
+/* Header logo sizing */
+header img,
+.logo img {
+    max-height: 60px;
+    width: auto;
+    display: block;
+}
+
 /* Navigation Styles */
 nav {
     width: 100%;
@@ -63,6 +71,27 @@ nav {
     cursor: pointer;
     align-self: flex-end;
     margin-top: -2.5rem;
+}
+
+/* Main hero or banner image formatting */
+main img,
+.hero img {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+}
+
+/* Member spotlights and directory images in cards */
+.spotlight img,
+.member-card img,
+.card img {
+    max-width: 120px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
 }
 
 /* Discover Main Content & Cards Grid (Mobile View: Single Column) */
