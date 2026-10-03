@@ -1,6 +1,116 @@
-/* Discover page image sizing and layout fixes */
-.cards-grid figure {
+/* Base Styles & Mobile First Layout */
+body {
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #003366;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0 0 1rem 0;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/* Navigation Styles */
+nav {
+    width: 100%;
+}
+
+.navigation {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navigation li {
+    width: 100%;
+    text-align: center;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.8rem;
+    color: #fff;
+    text-decoration: none;
+    background-color: #002244;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navigation a:hover,
+.navigation a.active {
+    background-color: #0055a5;
+}
+
+#menu {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.8rem;
+    cursor: pointer;
+    align-self: flex-end;
+    margin-top: -2.5rem;
+}
+
+/* Discover Main Content & Cards Grid (Mobile View: Single Column) */
+.discover-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.discover-main h2 {
+    text-align: center;
+    color: #003366;
+    margin-bottom: 1rem;
+}
+
+.visitor-message {
+    background-color: #e2e8f0;
+    color: #1e293b;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.cards-grid section {
+    background-color: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.cards-grid h2 {
+    font-size: 1.2rem;
+    color: #003366;
+    margin-top: 0;
+    text-align: left;
+}
+
+.cards-grid figure {
+    margin: 0 0 1rem 0;
     overflow: hidden;
     border-radius: 6px;
 }
@@ -10,4 +120,43 @@
     height: 200px;
     object-fit: cover;
     display: block;
+    transition: transform 0.3s ease;
+}
+
+.cards-grid address {
+    font-style: italic;
+    font-size: 0.9rem;
+    color: #475569;
+    margin-bottom: 0.5rem;
+}
+
+.cards-grid p {
+    font-size: 0.95rem;
+    color: #334155;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+}
+
+.cards-grid button {
+    background-color: #003366;
+    color: #fff;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.cards-grid button:hover {
+    background-color: #0055a5;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #002244;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
 }

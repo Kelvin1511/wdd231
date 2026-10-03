@@ -1,32 +1,76 @@
-@media (min-width: 38em) {
-    nav ul {
+@media (min-width: 768px) {
+    header {
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-between;
+        align-items: center;
     }
 
-    main {
-        max-width: 1100px;
-        margin: 0 auto;
-        grid-template-columns: 2fr 1fr;
+    header h1 {
+        margin: 0;
     }
 
-    .hero,
-    .spotlights {
-        grid-column: 1 / -1;
+    #menu {
+        display: none;
     }
 
-    .cta {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: rgba(0, 0, 0, 0.6);
-        padding: 1.5rem 2rem;
-        border-radius: 8px;
-        margin-top: 0;
+    .navigation {
+        flex-direction: row;
     }
 
-    #spotlight-cards {
+    .navigation li {
+        width: auto;
+    }
+
+    .navigation a {
+        border-bottom: none;
+        padding: 0.5rem 1rem;
+    }
+
+    /* Desktop Grid Layout for Discover Page */
+    .cards-grid {
+        display: grid;
         grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "card-1 card-2 card-3"
+            "card-4 card-5 card-6"
+            "card-7 card-8 card-8";
+        gap: 1.5rem;
+    }
+
+    .card-1 {
+        grid-area: card-1;
+    }
+
+    .card-2 {
+        grid-area: card-2;
+    }
+
+    .card-3 {
+        grid-area: card-3;
+    }
+
+    .card-4 {
+        grid-area: card-4;
+    }
+
+    .card-5 {
+        grid-area: card-5;
+    }
+
+    .card-6 {
+        grid-area: card-6;
+    }
+
+    .card-7 {
+        grid-area: card-7;
+    }
+
+    .card-8 {
+        grid-area: card-8;
+    }
+
+    /* Hover effect on desktop as required by rubric */
+    .cards-grid figure img:hover {
+        transform: scale(1.05);
     }
 }
