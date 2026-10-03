@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HoopHub Community Club - Site Plan</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <style>
+        /* Color Schema and Typography Applied Exclusively to this Document */
+        :root {
+            --primary-color: #1b263b;
+            /* Navy Blue */
+            --secondary-color: #e85d04;
+            /* Basketball Orange */
+            --bg-color: #f8f9fa;
+            --text-color: #212529;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: var(--white);
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+
+        header h1 {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            color: var(--secondary-color);
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin: 0.5rem 0 0;
+            font-size: 1.1rem;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            background: var(--white);
+            padding: 2.5rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            border-radius: 8px;
+        }
+
+        section {
+            margin-bottom: 2.5rem;
+        }
+
+        h2 {
+            font-family: 'Poppins', sans-serif;
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+
+        p,
+        li {
+            font-size: 1rem;
+        }
+
+        ul {
+            padding-left: 1.5rem;
+        }
+
+        .color-box-container {
+            display: flex;
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .color-card {
+            flex: 1;
+            padding: 1.5rem;
+            border-radius: 6px;
+            text-align: center;
+            color: var(--white);
+            font-weight: 500;
+        }
+
+        .navy {
+            background-color: var(--primary-color);
+        }
+
+        .orange {
+            background-color: var(--secondary-color);
+        }
+
+        .wireframe-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .wireframe-box {
+            border: 2px dashed #adb5bd;
+            padding: 1rem;
+            text-align: center;
+            background-color: #f1f3f5;
+            border-radius: 6px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: var(--primary-color);
+            color: var(--white);
+            margin-top: 2rem;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .wireframe-container {
+                grid-template-columns: 1fr;
+            }
+
+            .color-box-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>HoopHub Community Club</h1>
+        <p>W05 Project Site Plan | Author: Rich Kevin Panozo Vargas</p>
+    </header>
+
+    <main>
+        <!-- 1. Site Name -->
+        <section id="site-name">
+            <h2>1. Site Name</h2>
+            <p><strong>Selected Name:</strong> HoopHub Community Club</p>
+            <p><strong>Reason:</strong> This name represents a centralized hub and community club for basketball players
+                and fans. It clearly communicates the core purpose of gathering local basketball enthusiasts, sharing
+                league updates, and promoting community tournaments.</p>
+            <p><em>Optional Domain Availability:</em> hoophub-club.org</p>
+        </section>
+
+        <!-- 2. Site Purpose -->
+        <section id="site-purpose">
+            <h2>2. Site Purpose</h2>
+            <p>The website functions as a central informational portal for the local basketball community. It provides
+                schedules for upcoming recreational games, tournament brackets, training tips, and an online
+                membership/sign-up form for players wanting to join local teams.</p>
+        </section>
+
+        <!-- 3. Scenarios -->
+        <section id="scenarios">
+            <h2>3. Scenarios</h2>
+            <p>Target audience users will visit the site looking for specific answers. Key user scenarios include:</p>
+            <ul>
+                <li>What are the registration requirements and deadlines to join the upcoming seasonal tournament?</li>
+                <li>Where can I check the updated weekly game schedules, court locations, and live scores?</li>
+            </ul>
+        </section>
+
+        <!-- 4. Color Scheme -->
+        <section id="color-scheme">
+            <h2>4. Color Scheme</h2>
+            <p>The site utilizes a clean, sporty contrast palette designed to maintain high readability and visual
+                identity:</p>
+            <div class="color-box-container">
+                <div class="color-card navy">
+                    Primary Color: Navy Blue (#1b263b)<br>
+                    <small>Used for: Headers, footers, and primary navigation.</small>
+                </div>
+                <div class="color-card orange">
+                    Secondary Color: Basketball Orange (#e85d04)<br>
+                    <small>Used for: Accent lines, buttons, and titles.</small>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Typography -->
+        <section id="typography">
+            <h2>5. Typography</h2>
+            <p>Typography has been chosen to provide a modern, clean athletic aesthetic while ensuring optimal
+                legibility:</p>
+            <ul>
+                <li><strong>Heading Font:</strong> 'Poppins' (Sans-serif, bold, used for main headings and titles to
+                    give a dynamic structure).</li>
+                <li><strong>Body Font:</strong> 'Roboto' (Sans-serif, clean, highly readable, used for paragraphs,
+                    lists, and content descriptions).</li>
+            </ul>
+        </section>
+
+        <!-- 6. Wireframe -->
+        <section id="wireframe">
+            <h2>6. Wireframe</h2>
+            <p>Structural layout layout plans for mobile and desktop viewports:</p>
+            <div class="wireframe-container">
+                <div class="wireframe-box">
+                    <h3>Mobile View (Small Screen)</h3>
+                    <p>[ Header & Hamburger Menu ]</p>
+                    <hr>
+                    <p>[ Hero Banner Image ]</p>
+                    <hr>
+                    <p>[ Main Content: Purpose & Scenarios stacked vertically ]</p>
+                    <hr>
+                    <p>[ Footer ]</p>
+                </div>
+                <div class="wireframe-box">
+                    <h3>Desktop View (Large Screen)</h3>
+                    <p>[ Header Logo | Navigation Menu (Home, Schedule, Contact) ]</p>
+                    <hr>
+                    <p>[ Wide Hero Banner & Featured Content Grid ]</p>
+                    <hr>
+                    <p>[ Two-Column Layout: Scenarios & Color Schema details side-by-side ]</p>
+                    <hr>
+                    <p>[ Footer ]</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 | Rich Kevin Panozo Vargas | BYU-Pathway Worldwide - WDD 231</p>
+    </footer>
+
+</body>
+
+</html>
