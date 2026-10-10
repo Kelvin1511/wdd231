@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoops Central - Data Received</title>
+    <meta name="description" content="Form data confirmation page.">
+    <meta name="author" content="Rich Kevin Panozo Vargas">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Hoops Central</h1>
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="players.html">Players</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Thank you for registering or contacting us!</h2>
+        <div
+            style="background: white; padding: 2rem; border-radius: 8px; max-width: 600px; margin: 0 auto; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+            <p><strong>Name:</strong> <span id="display-name"></span></p>
+            <p><strong>Email:</strong> <span id="display-email"></span></p>
+            <p><strong>Favorite Team:</strong> <span id="display-team"></span></p>
+            <br>
+            <a href="index.html" class="btn" style="display: inline-block; text-decoration: none;">Back to Home</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Hoops Central. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        document.getElementById('display-name').textContent = params.get('fullname') || 'Not provided';
+        document.getElementById('display-email').textContent = params.get('email') || 'Not provided';
+        document.getElementById('display-team').textContent = params.get('teamfav') || 'Not provided';
+    </script>
+</body>
+
+</html>

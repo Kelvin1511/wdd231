@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "name": "LeBron James",
+        "team": "Los Angeles Lakers",
+        "position": "Small Forward",
+        "points": 27.1,
+        "image": "https://images.unsplash.com/photo-1546519638-68e109498ffc?w=400&auto=format&fit=crop&q=80"
+    },
+    {
+        "id": 2,
+        "name": "Stephen Curry",
+        "team": "Golden State Warriors",
+        "position": "Point Guard",
+        "points": 29.4,
+        "image": "https://images.unsplash.com/photo-1519766304817-4f37bda74a26?w=400&auto=format&fit=crop&q=80"
+    },
+    {
+        "id": 3,
+        "name": "Kevin Durant",
+        "team": "Phoenix Suns",
+        "position": "Power Forward",
+        "points": 27.3,
+        "image": "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=400&auto=format&fit=crop&q=80"
+    },
+    {
+        "id": 4,
+        "name": "Giannis Antetokounmpo",
+        "team": "Milwaukee Bucks",
+        "position": "Power Forward",
+        "points": 30.4,
+        "image": "https://images.unsplash.com/photo-1546519638-68e109498ffc?w=400&auto=format&fit=crop&q=80"
+    },
+    {
+        "id": 5,
+        "name": "Luka Doncic",
+        "team": "Dallas Mavericks",
+        "position": "Point Guard",
+        "points": 33.9,
+        "image": "https://images.unsplash.com/photo-1519766304817-4f37bda74a26?w=400&auto=format&fit=crop&q=80"
+    },
+    {
+        "id": 6,
+        "name": "Joel Embiid",
+        "team": "Philadelphia 76ers",
+        "position": "Center",
+        "points": 34.7,
+        "image": "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=400&auto=format&fit=crop&q=80"
+    },
+    {
+        "id": 7,
+        "name": "Jayson Tatum",
+        "team": "Boston Celtics",
+        "position": "Small Forward",
+        "points": 26.9,
+        "image": "https://images.unsplash.com/photo-1546519638-68e109498ffc?w=400&auto=format&fit=crop&q=80"
+    },
+    {
+        "id": 8,
+        "name": "Devin Booker",
+        "team": "Phoenix Suns",
+        "position": "Shooting Guard",
+        "points": 27.1,
+        "image": "https://images.unsplash.com/photo-1519766304817-4f37bda74a26?w=400&auto=format&fit=crop&q=80"
+    },
+    {
+        "id": 9,
+        "name": "Anthony Davis",
+        "team": "Los Angeles Lakers",
+        "position": "Center",
+        "points": 24.7,
+        "image": "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=400&auto=format&fit=crop&q=80"
+    },
+    {
+        "id": 10,
+        "name": "Damian Lillard",
+        "team": "Milwaukee Bucks",
+        "position": "Point Guard",
+        "points": 24.3,
+        "image": "https://images.unsplash.com/photo-1546519638-68e109498ffc?w=400&auto=format&fit=crop&q=80"
+    },
+    {
+        "id": 11,
+        "name": "Jimmy Butler",
+        "team": "Miami Heat",
+        "position": "Small Forward",
+        "points": 20.8,
+        "image": "https://images.unsplash.com/photo-1519766304817-4f37bda74a26?w=400&auto=format&fit=crop&q=80"
+    },
+    {
+        "id": 12,
+        "name": "Kawhi Leonard",
+        "team": "LA Clippers",
+        "position": "Small Forward",
+        "points": 23.7,
+        "image": "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=400&auto=format&fit=crop&q=80"
+    },
+    {
+        "id": 13,
+        "name": "Kyrie Irving",
+        "team": "Dallas Mavericks",
+        "position": "Shooting Guard",
+        "points": 25.6,
+        "image": "https://images.unsplash.com/photo-1546519638-68e109498ffc?w=400&auto=format&fit=crop&q=80"
+    },
+    {
+        "id": 14,
+        "name": "Shai Gilgeous-Alexander",
+        "team": "Oklahoma City Thunder",
+        "position": "Point Guard",
+        "points": 30.1,
+        "image": "https://images.unsplash.com/photo-1519766304817-4f37bda74a26?w=400&auto=format&fit=crop&q=80"
+    },
+    {
+        "id": 15,
+        "name": "Nikola Jokic",
+        "team": "Denver Nuggets",
+        "position": "Center",
+        "points": 26.4,
+        "image": "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=400&auto=format&fit=crop&q=80"
+    }
+]

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoops Central - Star Players</title>
+    <meta name="description"
+        content="Dynamic listing of top basketball players with distinct properties and statistics.">
+    <meta name="author" content="Rich Kevin Panozo Vargas">
+    <link rel="icon" type="image/x-icon"
+        href="https://images.unsplash.com/photo-1546519638-68e109498ffc?w=32&auto=format&fit=crop&q=80">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Hoops Central</h1>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Open menu">☰</button>
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="players.html" class="active">Players</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Featured Players</h2>
+        <p>Explore our dynamically generated database featuring top league scorers.</p>
+
+        <div id="players-container" class="grid-container">
+            <!-- Items loaded via JavaScript -->
+        </div>
+
+        <!-- Modal Dialog Structure -->
+        <dialog id="player-modal">
+            <h3>Player Details</h3>
+            <p id="modal-text">Detailed information...</p>
+            <button class="btn" id="close-modal">Close</button>
+        </dialog>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Hoops Central. All rights reserved.</p>
+        <p><a href="https://www.youtube.com" target="_blank">Project Demonstration Video</a> | <a href="#"
+                target="_blank">Attributions</a></p>
+    </footer>
+
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>
